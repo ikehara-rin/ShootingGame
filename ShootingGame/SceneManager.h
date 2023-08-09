@@ -3,16 +3,16 @@
 
 //シーンマネージャークラス
 //各シーンの切り替えを管理する。
-class SceneBase :public AbstractScene {
+class SceneManager :public AbstractScene {
 private:
 	AbstractScene* mScene;	//現在のシーン
 
 public:
 	//コンストラクタ
-	SceneBase(AbstractScene* scene): mScene(scene) {}
+	SceneManager(AbstractScene* scene): mScene(scene) {}
 
 	//デストラクタ
-	~SceneBase() {
+	~SceneManager() {
 		delete mScene;
 	}
 

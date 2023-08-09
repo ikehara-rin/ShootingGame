@@ -10,4 +10,6 @@ void InputKey :: UpdateKey() {
 	OldKey = NowKey;
 	NowKey = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 	KeyFlg = NowKey & ~OldKey;
+
+
 }

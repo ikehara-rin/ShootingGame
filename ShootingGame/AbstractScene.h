@@ -3,11 +3,6 @@
 //デフォルトの抽象シーンクラス
 //ユーザーはこれを継承してシーンを実装すると楽
 class AbstractScene {
-private:
-	int num = 0;
-	void a() {
-		num = 0;
-	}
 public:
 	//デストラクタ
 	virtual ~AbstractScene() {};

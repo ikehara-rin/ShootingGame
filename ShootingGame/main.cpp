@@ -1,7 +1,8 @@
-#include"SceneBase.h"
-#include"TitleScene.h"
+#include"SceneManager.h"
+//#include"TitleScene.h"
 #include"DxLib.h"
 #include"InputKey.h"
+#include"GameMainScene.h"
 
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
 {
@@ -14,13 +15,13 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	//DXライブラリの初期化処理
 	if (DxLib_Init() == -1) return -1;
 
-	SceneBase sceneMng(dynamic_cast<AbstractScene*>(new Title()));
+	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new GameMain()));
 
 	SetDrawScreen(DX_SCREEN_BACK);	// 描画先画面を裏にする
 
 	SetFontSize(20);		// 文字サイズを設定
 
-	while (ProcessMessage() == 0) {
+	while (ProcessMessage() == 0|| (GetJoypadInputState(DX_INPUT_KEY_PAD1) & PAD_INPUT_9) == 0) {
 
 		ClearDrawScreen();		// 画面の初期化
 
