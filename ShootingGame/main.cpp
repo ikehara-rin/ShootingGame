@@ -1,26 +1,26 @@
-#include"SceneManager.h"
-//#include"Title.h"
+#include"SceneBase.h"
+#include"TitleScene.h"
 #include"DxLib.h"
-//#include"InputKey.h"
+#include"InputKey.h"
 
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
 {
 	// タイトルを test に変更
-	SetMainWindowText("ブロック崩し");
+	SetMainWindowText("test");
 
 	//ウィンドウモードで起動
 	ChangeWindowMode(TRUE);
-
+	
 	//DXライブラリの初期化処理
 	if (DxLib_Init() == -1) return -1;
 
-	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new Title()));
+	SceneBase sceneMng(dynamic_cast<AbstractScene*>(new Title()));
 
 	SetDrawScreen(DX_SCREEN_BACK);	// 描画先画面を裏にする
 
 	SetFontSize(20);		// 文字サイズを設定
 
-	while (ProcessMessage() == 0 && End::EndFlg != 99) {
+	while (ProcessMessage() == 0) {
 
 		ClearDrawScreen();		// 画面の初期化
 

@@ -1,6 +1,6 @@
-#include "SceneManager.h"
+#include "SceneBase.h"
 
-AbstractScene* SceneManager::Update() {
+AbstractScene* SceneBase::Update() {
 	AbstractScene* p = mScene->Update();
 	if (p != mScene) {
 		delete mScene;
@@ -9,6 +9,6 @@ AbstractScene* SceneManager::Update() {
 
 	return p;
 }
-void SceneManager::Draw()const {
+void SceneBase::Draw()const {
 	mScene->Draw();
 }

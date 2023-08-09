@@ -140,11 +140,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
-    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletSpawner.h" />
+    <ClInclude Include="CharaBase.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="GameMainScene.h" />
+    <ClInclude Include="InputKey.h" />
+    <ClInclude Include="NwaySpawner.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SphereCollider.h" />
+    <ClInclude Include="TitleScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletSpawner.cpp" />
+    <ClCompile Include="CharaBase.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="GameMainScene.cpp" />
+    <ClCompile Include="InputKey.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="ScceneManager.cpp" />
+    <ClCompile Include="NwaySpawner.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SceneBase.cpp" />
+    <ClCompile Include="SphereCollider.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
