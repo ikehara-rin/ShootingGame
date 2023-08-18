@@ -1,9 +1,12 @@
 #pragma once
+
 class PlayerController {
 private:
 
-	int PlayerX;
-	int PlayerY;
+	static int PlayerX;
+	static int PlayerY;
 
-	void input();
+	PlayerController();
+public:
+	static void Input();
 };

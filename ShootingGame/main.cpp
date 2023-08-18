@@ -12,6 +12,8 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	//ウィンドウモードで起動
 	ChangeWindowMode(TRUE);
 	
+	SetWindowSize(1280, 720);
+
 	//DXライブラリの初期化処理
 	if (DxLib_Init() == -1) return -1;
 
@@ -21,7 +23,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 	SetFontSize(20);		// 文字サイズを設定
 
-	while (ProcessMessage() == 0|| (GetJoypadInputState(DX_INPUT_KEY_PAD1) & PAD_INPUT_9) == 0) {
+	while (ProcessMessage() == 0) {
 
 		ClearDrawScreen();		// 画面の初期化
 
