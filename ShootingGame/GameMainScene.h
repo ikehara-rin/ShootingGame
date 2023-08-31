@@ -1,23 +1,29 @@
 #pragma once
 #include"AbstractScene.h"
+#include"common.h"
 #include"Player.h"
 
-class GameMain :public AbstractScene{
+class GameMainScene :public AbstractScene{
 private:
 
-	Player p;
-
-	int Player;
+	int player;
 	int life;
-	int* enemy;
-	int* bullet;
+	int* enemy[ENEMY_MAX];
+	int* bullet[BULLET_MAX];
+
+	//Player p;
+
 
 public:
 	//コンストラクタ
-	GameMain();
+	GameMainScene();
 
+	void HitCheck();
+
+	void SpawnBullet();
 	//デストラクタ
-	virtual~GameMain() {};
+	virtual~GameMainScene() {};
+
 
 	//描画以外の更新を実装する
 	virtual AbstractScene* Update() override;

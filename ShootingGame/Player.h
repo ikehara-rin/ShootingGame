@@ -1,19 +1,32 @@
 #pragma once
 #include"CharaBase.h"
+#include"BulletSpawner.h"
+#include"GameMainScene.h"
 
 class Player :public CharaBase {
 protected:
+
 	int PlayerX;
 	int PlayerY;
 	int PlayerXX;
 	int PlayerYY;
-	void Move();
+
+	int score;
+	//BulletSpawner* weapon;
+	
 public:
+	void Move();
+
 	Player();
 	//デストラクタ
-	~Player() {};
-	//描画以外の更新を実装する
-	void Update();
+	virtual~Player() {};
+	////描画以外の更新を実装する
+	//void Update(GameMainScene* GM) override;
+	////描画に関することを実装する
+	//void Draw()const override;
+
+	//void Hit() override;
+
 	//描画に関することを実装する
 	void Draw()const;
 };

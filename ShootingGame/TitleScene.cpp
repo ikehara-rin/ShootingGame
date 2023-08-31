@@ -28,12 +28,8 @@ AbstractScene* Title::Update() {
 	if (InputKey::KeyFlg & PAD_INPUT_A) {
 		//switch (MenuNumber) {
 		//case 0:
-		//	//ƒuƒƒbƒN‰Šú‰»
-		//	stage.InitBlock();	
-		//	return new GameMain;
 		//	break;
 		//case 1:
-		//	return new Ranking;
 		//	break;
 		//}
 	};

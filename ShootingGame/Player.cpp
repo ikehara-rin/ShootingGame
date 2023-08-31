@@ -1,6 +1,7 @@
 #include"DxLib.h"
 #include"Player.h"
 #include"InputKey.h"
+#include"GameMainScene.h"
 
 Player::Player() {
 	PlayerX = 0;
@@ -9,18 +10,27 @@ Player::Player() {
 	PlayerYY = 0;
 }
 
-void Player::Update() {
-	Move();
-}
+//void Player::Update(GameMainScene* GM) {
+//	Move();
+//
+//}
+//
+//void Player::Draw()const {
+//	DrawCircle(PlayerX, PlayerY, 3, GetColor(255, 255, 255), TRUE);
+//}
+//
+//void Player::Hit() {
+//
+//}
 
-void Player::Draw() const {
-	DrawBox(PlayerX, PlayerY, PlayerX+32, PlayerY+32, GetColor(255, 255, 255), TRUE);
+void Player::Draw()const {
+	DrawCircle(PlayerX, PlayerY, 3, GetColor(255, 255, 255), TRUE);
 }
 
 void Player::Move() {
 
-	PlayerXX = PlayerX+32;
-	PlayerYY = PlayerY+32;
+	PlayerXX = PlayerX + 32;
+	PlayerYY = PlayerY + 32;
 
 	if (InputKey::InputX > 0) {
 		PlayerX = PlayerX + 2;

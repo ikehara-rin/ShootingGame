@@ -17,7 +17,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	//DXƒ‰ƒCƒuƒ‰ƒŠ‚Ì‰Šú‰»ˆ—
 	if (DxLib_Init() == -1) return -1;
 
-	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new GameMain()));
+	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new GameMainScene()));
 
 	SetDrawScreen(DX_SCREEN_BACK);	// •`‰ææ‰æ–Ê‚ğ— ‚É‚·‚é
 

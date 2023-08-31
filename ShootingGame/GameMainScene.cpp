@@ -1,17 +1,26 @@
 #include"DxLib.h"
 #include"GameMainScene.h"
 #include"InputKey.h"
-#include"Player.h"
+#include"CharaBase.h"
 
-GameMain::GameMain() {
+GameMainScene::GameMainScene() {
 
 }
 
-AbstractScene* GameMain::Update() {
-	p.Update();
+AbstractScene* GameMainScene::Update() {
+	//p.Move();
 	return this;
 }
 
-void GameMain::Draw() const{
-	p.Draw();
+void GameMainScene::Draw() const{
+	//p.Draw();
 }
+
+void GameMainScene::HitCheck() {
+
+}
+
+void GameMainScene::SpawnBullet() {
+
+}
+

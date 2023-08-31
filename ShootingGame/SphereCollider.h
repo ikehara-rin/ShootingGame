@@ -5,5 +5,12 @@ protected:
 	float location;
 	float radius;
 
-	void CheckCollision();
+public:
+	//コンストラクタ
+	SphereCollider();
+	
+	//デストラクタ
+	virtual ~SphereCollider() {};
+
+	void CheckCollision(SphereCollider*location,SphereCollider*radius);
 };

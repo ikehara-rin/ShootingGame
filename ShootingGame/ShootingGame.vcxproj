@@ -143,12 +143,14 @@
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="BulletSpawner.h" />
     <ClInclude Include="CharaBase.h" />
+    <ClInclude Include="common.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameMainScene.h" />
     <ClInclude Include="InputKey.h" />
     <ClInclude Include="NwaySpawner.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SphereCollider.h" />
     <ClInclude Include="TitleScene.h" />
@@ -164,6 +166,7 @@
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
     <ClCompile Include="TitleScene.cpp" />
