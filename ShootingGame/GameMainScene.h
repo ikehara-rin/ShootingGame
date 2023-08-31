@@ -6,10 +6,11 @@
 class GameMainScene :public AbstractScene{
 private:
 
+	int player;
 	int life;
 	int* enemy[ENEMY_MAX];
 	int* bullet[BULLET_MAX];
-
+	int Color;
 
 
 public:

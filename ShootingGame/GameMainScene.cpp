@@ -7,7 +7,7 @@
 
 Player p;
 GameMainScene::GameMainScene() {
-
+	Color = GetColor(255, 0, 0);
 }
 
 AbstractScene* GameMainScene::Update() {
@@ -17,6 +17,7 @@ AbstractScene* GameMainScene::Update() {
 
 void GameMainScene::Draw() const{
 	p.Draw();
+	DrawString(0, 0, "STARTÇ≈èIóπ",Color ,TRUE);
 }
 
 void GameMainScene::HitCheck() {

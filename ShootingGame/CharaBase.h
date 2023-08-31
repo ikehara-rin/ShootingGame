@@ -13,7 +13,7 @@ public:
 
 	virtual ~CharaBase() {};
 
-	virtual void Update(GameMainScene* GM);
+	virtual void Update();
 
 	virtual void Draw()const;
 

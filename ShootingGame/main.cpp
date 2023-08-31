@@ -1,5 +1,5 @@
 #include"SceneManager.h"
-//#include"TitleScene.h"
+#include"TitleScene.h"
 #include"DxLib.h"
 #include"InputKey.h"
 #include"GameMainScene.h"
@@ -17,13 +17,13 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	//DXライブラリの初期化処理
 	if (DxLib_Init() == -1) return -1;
 
-	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new GameMainScene()));
+	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new Title()));
 
 	SetDrawScreen(DX_SCREEN_BACK);	// 描画先画面を裏にする
 
 	SetFontSize(20);		// 文字サイズを設定
 
-	while (ProcessMessage() == 0) {
+	while (ProcessMessage() == 0&&(InputKey::KeyFlg&PAD_INPUT_R)==0) {
 
 		ClearDrawScreen();		// 画面の初期化
 

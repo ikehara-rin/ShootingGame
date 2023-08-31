@@ -6,7 +6,7 @@ CharaBase::CharaBase() {
 	image = 0;
 }
 
-void CharaBase::Update(GameMainScene* GM) {
+void CharaBase::Update() {
 
 }
 

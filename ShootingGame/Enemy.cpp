@@ -5,7 +5,7 @@ Enemy::Enemy() {
 
 }
 
-void Enemy::Update(GameMainScene* GM) {
+void Enemy::Update() {
 
 }
 

@@ -15,7 +15,7 @@ public:
 
 	~Enemy() {};
 
-	void Update(GameMainScene* GM)override;
+	void Update()override;
 
 	void Draw()const override;
 
