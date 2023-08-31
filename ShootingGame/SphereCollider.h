@@ -12,5 +12,5 @@ public:
 	//デストラクタ
 	virtual ~SphereCollider() {};
 
-	void CheckCollision(SphereCollider*location,SphereCollider*radius);
+	void CheckCollision(SphereCollider);
 };

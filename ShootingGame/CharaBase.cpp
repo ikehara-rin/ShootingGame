@@ -6,14 +6,14 @@ CharaBase::CharaBase() {
 	image = 0;
 }
 
-//void CharaBase::Update(GameMainScene* GM) {
-//
-//}
-//
-//void CharaBase::Draw() const{
-//
-//}
-//
-//void CharaBase::Hit() {
-//
-//}
+void CharaBase::Update(GameMainScene* GM) {
+
+}
+
+void CharaBase::Draw() const{
+
+}
+
+void CharaBase::Hit() {
+
+}

@@ -6,6 +6,6 @@ SphereCollider::SphereCollider() {
 	radius = 0;
 }
 
-void SphereCollider::CheckCollision(SphereCollider* location, SphereCollider* radius) {
+void SphereCollider::CheckCollision(SphereCollider) {
 	
 }

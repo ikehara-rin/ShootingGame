@@ -10,21 +10,17 @@ Player::Player() {
 	PlayerYY = 0;
 }
 
-//void Player::Update(GameMainScene* GM) {
-//	Move();
-//
-//}
-//
-//void Player::Draw()const {
-//	DrawCircle(PlayerX, PlayerY, 3, GetColor(255, 255, 255), TRUE);
-//}
-//
-//void Player::Hit() {
-//
-//}
+void Player::Update(GameMainScene* GM) {
+	Move();
+
+}
 
 void Player::Draw()const {
 	DrawCircle(PlayerX, PlayerY, 3, GetColor(255, 255, 255), TRUE);
+}
+
+void Player::Hit() {
+
 }
 
 void Player::Move() {

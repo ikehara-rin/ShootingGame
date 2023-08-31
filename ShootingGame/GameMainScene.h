@@ -1,17 +1,15 @@
 #pragma once
 #include"AbstractScene.h"
 #include"common.h"
-#include"Player.h"
+
 
 class GameMainScene :public AbstractScene{
 private:
 
-	int player;
 	int life;
 	int* enemy[ENEMY_MAX];
 	int* bullet[BULLET_MAX];
 
-	//Player p;
 
 
 public:
@@ -23,7 +21,6 @@ public:
 	void SpawnBullet();
 	//デストラクタ
 	virtual~GameMainScene() {};
-
 
 	//描画以外の更新を実装する
 	virtual AbstractScene* Update() override;

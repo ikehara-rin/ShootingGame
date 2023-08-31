@@ -13,9 +13,9 @@ public:
 
 	virtual ~CharaBase() {};
 
-	//virtual void Update(GameMainScene* GM);
+	virtual void Update(GameMainScene* GM);
 
-	//virtual void Draw()const;
+	virtual void Draw()const;
 
-	//virtual void Hit();
+	virtual void Hit();
 };
